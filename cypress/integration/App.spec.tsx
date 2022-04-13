@@ -11,13 +11,13 @@ describe('App', () => {
     cy.get('[data-testid="decrement-button"]').should('contain', 'Decrement')
   })
 
-  it('should increment the button', () => {
+  it('the increment button should increment count', () => {
     cy.get('[data-testid="increment-button"]').click()
 
     cy.get('[data-testid="count"]').should('contain', 'Count: 1')
   })
 
-  it('should decrement the button', () => {
+  it('the decrement button should decrement count', () => {
     cy.get('[data-testid="decrement-button"]').click()
 
     cy.get('[data-testid="count"]').should('contain', 'Count: -1')

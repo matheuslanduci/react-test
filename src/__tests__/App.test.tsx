@@ -10,7 +10,7 @@ test('renders count, increment and decrement buttons', () => {
   expect(screen.getByText('Decrement')).toBeInTheDocument()
 })
 
-test('should increment the button', () => {
+test('the increment button should increment count', () => {
   render(<App />)
 
   const incrementButton = screen.getByText('Increment')
@@ -20,7 +20,7 @@ test('should increment the button', () => {
   expect(screen.getByText('Count: 1')).toBeInTheDocument()
 })
 
-test('should decrement the button', () => {
+test('the decrement button should decrement count', () => {
   render(<App />)
 
   const decrementButton = screen.getByText('Decrement')
